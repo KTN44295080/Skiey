@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5d5a6dcc88091b48a58e02546274b37, type: 3}
+  m_Name: New Story Data 1
+  m_EditorClassIdentifier: 
+  stories:
+  - background: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+    character: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+    text: "\u3084\u3042\u308A\u307E\u3059\u306D\u3047"
+    name: "\u30A4\u30F3\u30BF\u30D3\u30E5\u30A2\u30FC"
+  - background: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+    character: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+    text: "\u3042\u3042"
+    name: "\u7530\u6240\u6D69\u4E8C"
