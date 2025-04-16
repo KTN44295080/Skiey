@@ -4,6 +4,8 @@ using UnityEngine;
 [CreateAssetMenu]
 public class StoryData : ScriptableObject
 {
+    public int chapter;
+    public bool isChoice;
     public List<Story> stories = new List<Story>();
 }
 

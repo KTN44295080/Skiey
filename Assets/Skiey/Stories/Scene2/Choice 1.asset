@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5d5a6dcc88091b48a58e02546274b37, type: 3}
+  m_Name: Choice 1
+  m_EditorClassIdentifier: 
+  stories:
+  - background: {fileID: 21300000, guid: d665f09c39d454f40a149a758bfd050a, type: 3}
+    character: {fileID: 21300000, guid: efb2693fa302b534f9bac27a9343003f, type: 3}
+    name: "\u30E6\u30AD"
+    isHighlight: 1
+    text: "\u7A7A\u306E\u9752\u8272\u3092\u53CD\u5C04\u3057\u3066\u308B\u304B\u3089\u306A\u3093\u3060\u3063\u3066\uFF01\uFF01"
+  - background: {fileID: 0}
+    character: {fileID: 21300000, guid: efb2693fa302b534f9bac27a9343003f, type: 3}
+    name: 
+    isHighlight: 0
+    text: "\u5FAE\u7B11\u307E\u3057\u304F\u3066\u3064\u3044\u53E3\u5143\u304C\u7DE9\u3080\u3002\n"
+  - background: {fileID: 0}
+    character: {fileID: 21300000, guid: efb2693fa302b534f9bac27a9343003f, type: 3}
+    name: "\u30E6\u30AD"
+    isHighlight: 1
+    text: "\u307E\u3042\u79C1\u9054\u306F\u7A7A\u3082\u3001\u6D77\u3082\u898B\u306B\u884C\u3051\u306A\u3044\u3068\u601D\u3046\u3051\u3069\u2026\n\u7A7A\u60F3\u3059\u308B\u306E\u306F\u3001\u81EA\u7531\u3060\u304B\u3089\u306D\u3002"
+  - background: {fileID: 0}
+    character: {fileID: 21300000, guid: efb2693fa302b534f9bac27a9343003f, type: 3}
+    name: "\u30CF\u30B8\u30E1"
+    isHighlight: 0
+    text: "\u2500\u2500\u2500\u3044\u3064\u304B\u3001\u898B\u306B\u884C\u3053\u3046\u3088\u3002"
+  - background: {fileID: 0}
+    character: {fileID: 21300000, guid: efb2693fa302b534f9bac27a9343003f, type: 3}
+    name: "\u30E6\u30AD"
+    isHighlight: 1
+    text: "\u3048\uFF1F"
+  - background: {fileID: 0}
+    character: {fileID: 21300000, guid: efb2693fa302b534f9bac27a9343003f, type: 3}
+    name: "\u30CF\u30B8\u30E1"
+    isHighlight: 0
+    text: "\u9752\u7A7A\u306F\u898B\u305B\u3066\u3042\u3052\u3089\u308C\u306A\u3044\u2026\u3051\u3069\u3002\n\u5947\u9E97\u306A\u6E56\u306A\u3089\uFF01\u3053\u306E\u65BD\u8A2D\u306E\u88CF\u306B\u3042\u308B\u3093\u3060\u3002\n\u3053\u3063\u305D\u308A\u898B\u3064\u3051\u305F\u3093\u3060\uFF01"
+  - background: {fileID: 0}
+    character: {fileID: 21300000, guid: efb2693fa302b534f9bac27a9343003f, type: 3}
+    name: "\u30E6\u30AD"
+    isHighlight: 0
+    text: "\u30C6\u30F3\u30D1\u3063\u3066\u3064\u3089\u3064\u3089\u3068\u53E3\u304C\u8D70\u308B\u3002\n\u3042\u3042\u3082\u3046\u3001\u4F55\u3092\u8A00\u3063\u3066\u3044\u308B\u3093\u3060\u50D5\u306F\u3002\n\u305D\u3082\u305D\u3082\u30E6\u30AD\u304C\u898B\u305F\u3044\u306E\u306F\u6D77\u3067\u3042\u3063\u3066\u2500\u2500\u2500\u2500"
+  - background: {fileID: 0}
+    character: {fileID: 21300000, guid: efb2693fa302b534f9bac27a9343003f, type: 3}
+    name: "\u30E6\u30AD"
+    isHighlight: 1
+    text: "\u3046\u3093\uFF01\n\u7D76\u5BFE\u898B\u306B\u884C\u3053\u3046\u306D\u3001\u4E8C\u4EBA\u3067\u3002\n\u7D04\u675F\u3060\u3088\u3002"
+  - background: {fileID: 0}
+    character: {fileID: 21300000, guid: efb2693fa302b534f9bac27a9343003f, type: 3}
+    name: 
+    isHighlight: 0
+    text: "\u306A\u3093\u3066\u3002\n\u4E00\u5207\u66C7\u308A\u306E\u306A\u3044\u8868\u60C5\u3067\u3001\u6E80\u9762\u306E\u7B11\u9854\u3067\u30E6\u30AD\u306F\u8A00\u3046\u3002\n\"\u5FEB\u6674\"\u306E\u7F8E\u3057\u3055\u3068\u3044\u3046\u306E\u306F\u304D\u3063\u3068\u3001\u5F7C\u5973\u4F3C\u306A\u3093\u3060\u308D\u3046\u3002"
+  - background: {fileID: 0}
+    character: {fileID: 21300000, guid: efb2693fa302b534f9bac27a9343003f, type: 3}
+    name: "\u30E6\u30AD"
+    isHighlight: 0
+    text: "\u3042\u3041\u3002\u7D76\u5BFE\u898B\u306B\u884C\u3053\u3046\u3002\n\u3060\u304B\u3089\u305D\u308C\u307E\u3067\u2026"
+  - background: {fileID: 0}
+    character: {fileID: 21300000, guid: efb2693fa302b534f9bac27a9343003f, type: 3}
+    name: 
+    isHighlight: 0
+    text: "\u5143\u6C17\u3067\u306D\u3001\u306A\u3093\u3066\u7121\u8CAC\u4EFB\u306A\u3053\u3068\u306F\u8A00\u3048\u306A\u304B\u3063\u305F\u3002\n\u305D\u308C\u3067\u3082\u5F7C\u5973\u306F"
+  - background: {fileID: 0}
+    character: {fileID: 21300000, guid: efb2693fa302b534f9bac27a9343003f, type: 3}
+    name: 
+    isHighlight: 0
+    text: "\u9759\u304B\u306B\u5FAE\u7B11\u3093\u3067\u3001\u300C\u3046\u3093\u300D\u3068\u8A00\u3063\u305F\u3002"
