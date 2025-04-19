@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using LitMotion;
 using LitMotion.Extensions;
 using UnityEngine;
@@ -19,12 +18,14 @@ public class StoryManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI logText;
     [SerializeField] private GameObject choicePanel;
     private TextMeshProUGUI[] choicesTexts;
+    [SerializeField] private Image fadePanel;
     public static StoryManager Instance { get; private set; }
     public int storyIndex { get; private set; }
     public int textIndex { get; private set; }
     private int stockIndex;
     private string storyLog;
     private bool isReading;
+    private bool isLoading;
     
     private MotionHandle motionHandle;
 
@@ -46,6 +47,7 @@ public class StoryManager : MonoBehaviour
     {
         Story element = storyDatas[_storyIndex].stories[_textIndex];
         backgroundImage.sprite = element.background ? element.background : backgroundImage.sprite;
+        characterImage.enabled = element.character;
         characterImage.sprite = element.character ? element.character : characterImage.sprite;
         characterImage.color = element.isHighlight ? Color.white : Color.gray;
         float duration = (float)element.text.Length / 20;
@@ -75,6 +77,7 @@ public class StoryManager : MonoBehaviour
 
     public void Next()
     {
+        if (isLoading) return;
         if (isReading)
         {
             storyText.text = storyDatas[storyIndex].stories[textIndex].text;
@@ -87,20 +90,19 @@ public class StoryManager : MonoBehaviour
         characterName.text = "";
         if (textIndex >= storyDatas[storyIndex].stories.Count)
         {
+            if (storyDatas[storyIndex].isChoice)
+                SetChoiceText(storyDatas[storyIndex + 1].chapter);
+            else
+                LMotion.Create(0f, 1f, storyDatas[storyIndex].fadeTime)
+                    .WithOnComplete(() => OnNextScene(storyIndex, textIndex, storyDatas[storyIndex].fadeTime)).BindToColorA(fadePanel);
             textIndex = 0;
             storyIndex++;
+            isLoading = true;
             if (storyIndex >= storyDatas.Length)
-            {
                 SceneManager.LoadScene("Title");
-                return;
-            }
-
-            if (storyDatas[storyIndex - 1].isChoice)
-            {
-                SetChoiceText(storyDatas[storyIndex].chapter);
-                return;
-            }
+            return;
         }
+
         SetStroryData(storyIndex, textIndex);
     }
 
@@ -127,4 +129,17 @@ public class StoryManager : MonoBehaviour
         
         SetStroryData(storyIndex, textIndex);
     }
+
+    void OnNextScene(int _storyIndex, int _textIndex, float fadeTime)
+    {
+        Story element = storyDatas[_storyIndex].stories[_textIndex];
+        backgroundImage.sprite = element.background;
+        LMotion.Create(1f, 0f, fadeTime).WithDelay(fadeTime).WithOnComplete(() =>
+        {
+            SetStroryData(storyIndex, textIndex); 
+            isLoading = false;
+        }).BindToColorA(fadePanel);
+    }
+
+
 }

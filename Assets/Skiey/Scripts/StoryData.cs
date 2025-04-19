@@ -5,6 +5,7 @@ using UnityEngine;
 public class StoryData : ScriptableObject
 {
     public int chapter;
+    public float fadeTime = 1;
     public bool isChoice;
     public List<Story> stories = new List<Story>();
 }
@@ -14,6 +15,7 @@ public class Story
 {
     public Sprite background;
     public Sprite character;
+    public AudioClip sound;
     public string name;
     public bool isHighlight;
     [TextArea] public string text;
