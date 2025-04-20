@@ -13,6 +13,10 @@ public class UserInput : MonoBehaviour
         _actions = new InputSystem_Actions();
         _actions.Enable();
         _actions.UI.Submit.started += context => _storyManager.Next();
+        _actions.UI.Cancel.started += context =>
+        {
+            PlayerPrefs.DeleteAll();
+        };
     }
 
     private void OnDestroy()

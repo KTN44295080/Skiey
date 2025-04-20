@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System.Collections;
+using System.Security.Cryptography;
+using System.Security.Cryptography.X509Certificates;
 using UnityEngine.SceneManagement;
 
 public class StoryManager : MonoBehaviour
@@ -20,39 +22,74 @@ public class StoryManager : MonoBehaviour
     private TextMeshProUGUI[] choicesTexts;
     [SerializeField] private Image fadePanel;
     public static StoryManager Instance { get; private set; }
-    public int storyIndex { get; private set; }
-    public int textIndex { get; private set; }
+    private int StoryIndex
+    {
+        get => storyIndex;
+        set
+        {
+            storyIndex = value;
+            PlayerPrefs.SetInt("StoryIndex", value);
+        }
+    }
+    
+    private int TextIndex
+    {
+        get => textIndex;
+        set
+        {
+            textIndex = value;
+            PlayerPrefs.SetInt("TextIndex", value);
+        }
+    }
+
+    private int storyIndex;
+    private int textIndex;
     private int stockIndex;
     private string storyLog;
     private bool isReading;
     private bool isLoading;
     
     private MotionHandle motionHandle;
+    
+    private Color keepAlpha;
+
+    private MotionHandle characterMotion;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
         if (Instance == null)
-        {
             Instance = this;
-        }
-
-        storyText.text = "";
         
+        storyText.text = "";
         choicesTexts = choicePanel.GetComponentsInChildren<TextMeshProUGUI>();
-        SetStroryData(storyIndex, textIndex);
+        StoryIndex = PlayerPrefs.GetInt("StoryIndex", 0);
+        TextIndex = PlayerPrefs.GetInt("TextIndex", 0);
+        SetStroryData(StoryIndex, TextIndex);
+
+        keepAlpha = Color.white;
     }
 
     void SetStroryData(int _storyIndex, int _textIndex)
     {
         Story element = storyDatas[_storyIndex].stories[_textIndex];
-        backgroundImage.sprite = element.background ? element.background : backgroundImage.sprite;
-        characterImage.enabled = element.character;
-        characterImage.sprite = element.character ? element.character : characterImage.sprite;
-        characterImage.color = element.isHighlight ? Color.white : Color.gray;
-        float duration = (float)element.text.Length / 20;
+        float result = element.character ? 1f : 0f;
+        if (characterImage.sprite != element.character && (!characterImage.sprite || !element.character))
+            characterMotion = LMotion.Create(1 - result, result, 0.8f).WithOnComplete(() =>
+            {
+                characterImage.sprite = element.character;
+            }).BindToColorA(characterImage);
+        if (element.character)
+            characterImage.sprite = element.character;
+        
+
+        keepAlpha.a = characterImage.color.a;
+        characterImage.color = element.isHighlight ? Color.white: Color.gray;
+        characterImage.color *= keepAlpha;
+        backgroundImage.color = element.name == "" ? Color.white * 0.9f : Color.white;
+        backgroundImage.color = element.background ? backgroundImage.color : Color.black;
+        backgroundImage.sprite = element.background;
         StartCoroutine(ReadingText(element.text));
-        //motionHandle = LMotion.String.Create512Bytes("", element.text, duration).WithOnComplete(() => isReading = false).BindToText(storyText);
         characterName.text = element.name;
         
         storyLog += element.name + "\n";
@@ -67,9 +104,9 @@ public class StoryManager : MonoBehaviour
         {
             if(!isReading) break;
             storyText.text += c;
-            if (c == '、' || c == '，') yield return new WaitForSeconds(0.13f);
+            if (c == '、' || c == '，') yield return new WaitForSeconds(0.14f);
             else if (c == '。' || c == '．' || c == '？') yield return new WaitForSeconds(0.25f);
-            if(c == '\n') yield return new WaitForSeconds(0.3f);
+            if(c == '\n') yield return new WaitForSeconds(0.25f);
             else yield return wait;
         }
         isReading = false;
@@ -80,23 +117,25 @@ public class StoryManager : MonoBehaviour
         if (isLoading) return;
         if (isReading)
         {
+            if (characterMotion.IsActive())
+                characterMotion.Complete();
             storyText.text = storyDatas[storyIndex].stories[textIndex].text;
             isReading = false;
             return;
         }
 
-        textIndex++;
+        TextIndex++;
         storyText.text = "";
         characterName.text = "";
-        if (textIndex >= storyDatas[storyIndex].stories.Count)
+        if (TextIndex >= storyDatas[StoryIndex].stories.Count)
         {
-            if (storyDatas[storyIndex].isChoice)
-                SetChoiceText(storyDatas[storyIndex + 1].chapter);
+            if (storyDatas[StoryIndex].isChoice)
+                SetChoiceText(storyDatas[StoryIndex + 1].chapter);
             else
-                LMotion.Create(0f, 1f, storyDatas[storyIndex].fadeTime)
-                    .WithOnComplete(() => OnNextScene(storyIndex, textIndex, storyDatas[storyIndex].fadeTime)).BindToColorA(fadePanel);
-            textIndex = 0;
-            storyIndex++;
+                LMotion.Create(0f, 1f, storyDatas[StoryIndex].fadeTime)
+                    .WithOnComplete(() => OnNextScene(StoryIndex, TextIndex, storyDatas[StoryIndex].fadeTime)).BindToColorA(fadePanel);
+            TextIndex = 0;
+            StoryIndex++;
             isLoading = true;
             if (storyIndex >= storyDatas.Length)
                 SceneManager.LoadScene("Title");
@@ -124,7 +163,7 @@ public class StoryManager : MonoBehaviour
     public void OnChoice(int index)
     {
         choicePanel.SetActive(false);
-        storyIndex += index;
+        StoryIndex += index;
         stockIndex = index;
         
         SetStroryData(storyIndex, textIndex);
@@ -132,8 +171,9 @@ public class StoryManager : MonoBehaviour
 
     void OnNextScene(int _storyIndex, int _textIndex, float fadeTime)
     {
-        Story element = storyDatas[_storyIndex].stories[_textIndex];
-        backgroundImage.sprite = element.background;
+        backgroundImage.sprite = storyDatas[_storyIndex].stories[_textIndex].background;
+        characterImage.color = Color.clear;
+        characterImage.sprite = null;
         LMotion.Create(1f, 0f, fadeTime).WithDelay(fadeTime).WithOnComplete(() =>
         {
             SetStroryData(storyIndex, textIndex); 

@@ -12,6 +12,13 @@ public class TitleManager : MonoBehaviour
 
     public void OnStartGame()
     {
+        PlayerPrefs.DeleteKey("StoryIndex");
+        PlayerPrefs.DeleteKey("TextIndex");
+        SceneManager.LoadScene("Main");
+    }
+
+    public void OnLoadGame()
+    {
         SceneManager.LoadScene("Main");
     }
 

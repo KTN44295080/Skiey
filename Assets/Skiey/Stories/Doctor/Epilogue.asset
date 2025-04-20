@@ -12,15 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5d5a6dcc88091b48a58e02546274b37, type: 3}
   m_Name: Epilogue
   m_EditorClassIdentifier: 
+  background: {fileID: 21300000, guid: 5818297fe8f8f7c428738f5c8f164d95, type: 3}
   chapter: 0
+  fadeTime: 1
+  isChoice: 0
   stories:
-  - background: {fileID: 21300000, guid: f840c8aa2313511408b5458f736bf946, type: 3}
-    character: {fileID: 0}
+  - character: {fileID: 0}
+    sound: {fileID: 0}
     name: "\u533B\u8005"
     isHighlight: 0
     text: "\u3084\u308C\u3084\u308C\u3002\u5384\u4ECB\u306A\u3053\u3068\u3092\u3057\u3066\u304F\u308C\u305F\u3082\u306E\u3060\u2026\u3042\u306E\u5C11\u5E74\u3082\u3002"
-  - background: {fileID: 0}
-    character: {fileID: 0}
+  - character: {fileID: 0}
+    sound: {fileID: 0}
     name: "\u533B\u8005"
     isHighlight: 0
     text: "\u3057\u304B\u3057\u2500\u2500\u2500\u54C0\u308C\u306A\u3082\u306E\u3060\u306A\u3002"
