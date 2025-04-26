@@ -10,7 +10,6 @@ public class ChoiceData : ScriptableObject
     public class Choice
     {
         public int choiceID;
-        public int loveValue;
         public string text;
     }
 }

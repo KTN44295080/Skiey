@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dca9324235dcf8b48a97f10cff84724f, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  choices:
+  - choiceID: 0
+    text: "\u5148\u751F\u306E\u90E8\u5C4B\u306B\u5165\u308B"
+  - choiceID: 1
+    text: "\u5148\u751F\u306E\u90E8\u5C4B\u306B\u5165\u3089\u306A\u3044"

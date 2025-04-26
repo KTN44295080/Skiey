@@ -12,18 +12,46 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5d5a6dcc88091b48a58e02546274b37, type: 3}
   m_Name: Epilogue
   m_EditorClassIdentifier: 
-  background: {fileID: 21300000, guid: 5818297fe8f8f7c428738f5c8f164d95, type: 3}
+  fake: 0
   chapter: 0
   fadeTime: 1
   isChoice: 0
+  bgm: {fileID: 8300000, guid: a410b90fa3e18674495e37246784d705, type: 3}
+  volume: 0.3
   stories:
-  - character: {fileID: 0}
+  - backgroundColor: {r: 0, g: 0, b: 0, a: 0}
+    background: {fileID: 21300000, guid: 73031bf43681e4248a156472483a5e75, type: 3}
+    character: {fileID: 0}
     sound: {fileID: 0}
     name: "\u533B\u8005"
     isHighlight: 0
-    text: "\u3084\u308C\u3084\u308C\u3002\u5384\u4ECB\u306A\u3053\u3068\u3092\u3057\u3066\u304F\u308C\u305F\u3082\u306E\u3060\u2026\u3042\u306E\u5C11\u5E74\u3082\u3002"
-  - character: {fileID: 0}
+    canChange: 0
+    stopMusic: 0
+    text: "\u3084\u308C\u3084\u308C\u3002\u5384\u4ECB\u306A\u3053\u3068\u3092\u3057\u3066\u304F\u308C\u305F\u3082\u306E\u3060\u2026\u3042\u306E\u5C11\u5E74\u3082\u3002\n"
+  - backgroundColor: {r: 0, g: 0, b: 0, a: 0}
+    background: {fileID: 21300000, guid: 73031bf43681e4248a156472483a5e75, type: 3}
+    character: {fileID: 0}
     sound: {fileID: 0}
     name: "\u533B\u8005"
     isHighlight: 0
+    canChange: 0
+    stopMusic: 0
+    text: "\u76EE\u306B\u5149\u3092\u5BBF\u3055\u305A\u3068\u3082\u3001\u5922\u3092\u62B1\u3044\u3066\u3055\u3048\u3044\u308C\u3070\u5FC3\u306E\u706F\u706B\u306F\u6D88\u3048\u306A\u3044\u3002\n\u3053\u308C\u3092\u4EBA\u306F\u5E0C\u671B\u3068\u547C\u3093\u3060\u3002"
+  - backgroundColor: {r: 0, g: 0, b: 0, a: 0}
+    background: {fileID: 21300000, guid: 73031bf43681e4248a156472483a5e75, type: 3}
+    character: {fileID: 0}
+    sound: {fileID: 0}
+    name: "\u533B\u8005"
+    isHighlight: 0
+    canChange: 0
+    stopMusic: 0
+    text: "\u2026\u5916\u306E\u4E16\u754C\u3092\u5922\u898B\u308B\u3070\u304B\u308A\u3001\u73FE\u5B9F\u304C\u898B\u3048\u3066\u3044\u306A\u304B\u3063\u305F\u304B\u3002"
+  - backgroundColor: {r: 0, g: 0, b: 0, a: 0}
+    background: {fileID: 21300000, guid: 73031bf43681e4248a156472483a5e75, type: 3}
+    character: {fileID: 0}
+    sound: {fileID: 0}
+    name: "\u533B\u8005"
+    isHighlight: 0
+    canChange: 0
+    stopMusic: 0
     text: "\u3057\u304B\u3057\u2500\u2500\u2500\u54C0\u308C\u306A\u3082\u306E\u3060\u306A\u3002"

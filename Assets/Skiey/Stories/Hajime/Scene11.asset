@@ -1,0 +1,147 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5d5a6dcc88091b48a58e02546274b37, type: 3}
+  m_Name: Scene11
+  m_EditorClassIdentifier: 
+  fake: 0
+  chapter: 0
+  fadeTime: 1
+  isChoice: 0
+  bgm: {fileID: 8300000, guid: 0f1c3b9bece271048b233b7a18fde219, type: 3}
+  volume: 0.2
+  stories:
+  - backgroundColor: {r: 0, g: 0, b: 0, a: 0}
+    background: {fileID: 21300000, guid: 302b8eeefba0d3f4096743577d2e6593, type: 3}
+    character: {fileID: 0}
+    sound: {fileID: 0}
+    name: 
+    isHighlight: 0
+    canChange: 0
+    stopMusic: 0
+    text: "\u2500\u2500\u2500\u2500\u2500\u305D\u3046\u3057\u3066\u3001\u305D\u306E\u6E56\u306B\u3064\u3044\u305F\u3002"
+  - backgroundColor: {r: 0, g: 0, b: 0, a: 0}
+    background: {fileID: 21300000, guid: 302b8eeefba0d3f4096743577d2e6593, type: 3}
+    character: {fileID: 0}
+    sound: {fileID: 0}
+    name: 
+    isHighlight: 0
+    canChange: 0
+    stopMusic: 0
+    text: "\u3042\u3041\u3001\u3084\u306F\u308A\u3053\u3053\u306F\u7F8E\u3057\u3044\u3002\r\n\u4E45\u3057\u3076\u308A\u306B\u6765\u305F\u3068\u3044\u3046\u306E\u3082\u3042\u308B\u304C\u3001\u524D\u898B\u306B\u6765\u3066\u3044\u305F\u6642\u3088\u308A\u6570\u6BB5\u7DBA\u9E97\u306B\u898B\u3048\u305F\u3002\r\n\u6E80\u6708\u306E\u591C\u306B\u6765\u305F\u306E\u306F\u521D\u3081\u3066\u306E\u3053\u3068\u3060\u3063\u305F\u304B\u3089\u304B\u3001\u305D\u308C\u3068\u3082\u30E6\u30AD\u3068\u4E00\u7DD2\u3060\u304B\u3089\u304B\u3002"
+  - backgroundColor: {r: 0, g: 0, b: 0, a: 0}
+    background: {fileID: 21300000, guid: 302b8eeefba0d3f4096743577d2e6593, type: 3}
+    character: {fileID: 0}
+    sound: {fileID: 0}
+    name: 
+    isHighlight: 0
+    canChange: 0
+    stopMusic: 0
+    text: "\u6050\u3089\u304F\u3001\u305D\u306E\u4E21\u65B9\u3060\u308D\u3046\u3002"
+  - backgroundColor: {r: 0, g: 0, b: 0, a: 0}
+    background: {fileID: 21300000, guid: 302b8eeefba0d3f4096743577d2e6593, type: 3}
+    character: {fileID: 21300000, guid: deb8cc4befe32634891749b029486705, type: 3}
+    sound: {fileID: 0}
+    name: "\u30E6\u30AD"
+    isHighlight: 1
+    canChange: 0
+    stopMusic: 0
+    text: "\u3053\u3053\u304C\u2026"
+  - backgroundColor: {r: 0, g: 0, b: 0, a: 0}
+    background: {fileID: 21300000, guid: 302b8eeefba0d3f4096743577d2e6593, type: 3}
+    character: {fileID: 21300000, guid: deb8cc4befe32634891749b029486705, type: 3}
+    sound: {fileID: 0}
+    name: "\u30CF\u30B8\u30E1"
+    isHighlight: 0
+    canChange: 0
+    stopMusic: 0
+    text: "\u3042\u3041\u3002\u50D5\u306E\u898B\u305B\u305F\u304B\u3063\u305F\u6E56\u3060\u3002"
+  - backgroundColor: {r: 0, g: 0, b: 0, a: 0}
+    background: {fileID: 21300000, guid: 302b8eeefba0d3f4096743577d2e6593, type: 3}
+    character: {fileID: 21300000, guid: deb8cc4befe32634891749b029486705, type: 3}
+    sound: {fileID: 0}
+    name: "\u30CF\u30B8\u30E1"
+    isHighlight: 0
+    canChange: 0
+    stopMusic: 0
+    text: "\u3067\u3082\u3001\u3053\u3053\u306F\u30B9\u30BF\u30FC\u30C8\u5730\u70B9\u306B\u3059\u304E\u306A\u3044\u3002"
+  - backgroundColor: {r: 0, g: 0, b: 0, a: 0}
+    background: {fileID: 21300000, guid: 302b8eeefba0d3f4096743577d2e6593, type: 3}
+    character: {fileID: 21300000, guid: deb8cc4befe32634891749b029486705, type: 3}
+    sound: {fileID: 0}
+    name: "\u30CF\u30B8\u30E1"
+    isHighlight: 0
+    canChange: 0
+    stopMusic: 0
+    text: "\u3053\u308C\u304B\u3089\u3001\u4E8C\u4EBA\u3067\u3082\u3063\u3068\u591A\u304F\u306E\u3082\u306E\u3092\u898B\u306B\u884C\u3053\u3046\u3002\n\u75C5\u6C17\u304C\u6CBB\u308B\u304B\u306F\u308F\u304B\u3089\u306A\u3044\u3051\u308C\u3069\u3002\n\u5C11\u3057\u305A\u3064\u3001\u4E8C\u4EBA\u3067\u3002"
+  - backgroundColor: {r: 0, g: 0, b: 0, a: 0}
+    background: {fileID: 21300000, guid: 302b8eeefba0d3f4096743577d2e6593, type: 3}
+    character: {fileID: 21300000, guid: 0929b8be23537e449be4bf9619073cd1, type: 3}
+    sound: {fileID: 0}
+    name: "\u30E6\u30AD"
+    isHighlight: 1
+    canChange: 0
+    stopMusic: 0
+    text: "\u2026\u3046\u3093\u3002"
+  - backgroundColor: {r: 0, g: 0, b: 0, a: 0}
+    background: {fileID: 21300000, guid: 302b8eeefba0d3f4096743577d2e6593, type: 3}
+    character: {fileID: 21300000, guid: 0929b8be23537e449be4bf9619073cd1, type: 3}
+    sound: {fileID: 0}
+    name: 
+    isHighlight: 0
+    canChange: 0
+    stopMusic: 0
+    text: "\u30E6\u30AD\u306F\u3001\u9707\u3048\u305F\u58F0\u3067\u9837\u304F\u3002"
+  - backgroundColor: {r: 0, g: 0, b: 0, a: 0}
+    background: {fileID: 21300000, guid: 302b8eeefba0d3f4096743577d2e6593, type: 3}
+    character: {fileID: 21300000, guid: 0929b8be23537e449be4bf9619073cd1, type: 3}
+    sound: {fileID: 0}
+    name: "\u30CF\u30B8\u30E1"
+    isHighlight: 0
+    canChange: 0
+    stopMusic: 0
+    text: "\u2026\u307E\u30422\u4EBA\u3067\u629C\u3051\u51FA\u3057\u3066\u304D\u3061\u3083\u3063\u305F\u304B\u3089\u3001\u4ECA\u65E5\u306E\u3053\u3068\u306F\u30D0\u30EC\u3066\u3044\u308B\u304B\u3082\u3057\u308C\u306A\u3044\u3051\u3069\u3002"
+  - backgroundColor: {r: 0, g: 0, b: 0, a: 0}
+    background: {fileID: 21300000, guid: 302b8eeefba0d3f4096743577d2e6593, type: 3}
+    character: {fileID: 21300000, guid: 0929b8be23537e449be4bf9619073cd1, type: 3}
+    sound: {fileID: 0}
+    name: 
+    isHighlight: 0
+    canChange: 0
+    stopMusic: 0
+    text: "\u3057\u3093\u307F\u308A\u3068\u3057\u305F\u7A7A\u6C17\u3092\u5909\u3048\u305F\u304F\u3066\u3001\u5197\u8AC7\u3081\u3044\u305F\u3053\u3068\u3092\u8A00\u3046\u3002"
+  - backgroundColor: {r: 0, g: 0, b: 0, a: 0}
+    background: {fileID: 21300000, guid: 302b8eeefba0d3f4096743577d2e6593, type: 3}
+    character: {fileID: 21300000, guid: 0929b8be23537e449be4bf9619073cd1, type: 3}
+    sound: {fileID: 0}
+    name: "\u30E6\u30AD"
+    isHighlight: 1
+    canChange: 0
+    stopMusic: 0
+    text: "\u305D\u3057\u305F\u3089\u3082\u3046\u3001\u3053\u3053\u306F\u898B\u306B\u6765\u3089\u308C\u306A\u3044\u306D\u3002"
+  - backgroundColor: {r: 0, g: 0, b: 0, a: 0}
+    background: {fileID: 21300000, guid: 302b8eeefba0d3f4096743577d2e6593, type: 3}
+    character: {fileID: 21300000, guid: 0929b8be23537e449be4bf9619073cd1, type: 3}
+    sound: {fileID: 0}
+    name: 
+    isHighlight: 0
+    canChange: 0
+    stopMusic: 0
+    text: "\u30E6\u30AD\u306F\u5C11\u3057\u7B11\u3044\u306A\u304C\u3089\u8A00\u3046\u3002\n\u2500\u2500\u2500\u2500\u4EEE\u306B\u305D\u3046\u3060\u3068\u3057\u3066\u3082\u3001\u3082\u3046\u305D\u308C\u3092\u60DC\u3057\u3080\u5FC5\u8981\u306F\u306A\u3044\u3002"
+  - backgroundColor: {r: 0, g: 0, b: 0, a: 0}
+    background: {fileID: 21300000, guid: 302b8eeefba0d3f4096743577d2e6593, type: 3}
+    character: {fileID: 21300000, guid: 0929b8be23537e449be4bf9619073cd1, type: 3}
+    sound: {fileID: 0}
+    name: 
+    isHighlight: 0
+    canChange: 0
+    stopMusic: 0
+    text: "\u96A3\u306B\u306F\u305A\u3063\u3068\u3001\u3053\u306E\u666F\u8272\u3088\u308A\u3082\u7F8E\u3057\u3044\u4EBA\u304C\u3044\u308B\u306E\u3060\u304B\u3089\u3002"

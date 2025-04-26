@@ -12,93 +12,115 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5d5a6dcc88091b48a58e02546274b37, type: 3}
   m_Name: Scene7
   m_EditorClassIdentifier: 
-  background: {fileID: 21300000, guid: 5818297fe8f8f7c428738f5c8f164d95, type: 3}
-  chapter: 0
+  fake: 0
+  chapter: 3
   fadeTime: 1
   isChoice: 0
+  bgm: {fileID: 8300000, guid: 772d23de9fed23243a5d0c1292069553, type: 3}
+  volume: 0.3
   stories:
-  - character: {fileID: 0}
+  - background: {fileID: 21300000, guid: 22d298df322387e448f25d3331bba48b, type: 3}
+    character: {fileID: 21300000, guid: deb8cc4befe32634891749b029486705, type: 3}
     sound: {fileID: 0}
-    name: 
-    isHighlight: 0
-    text: "\u3053\u306E\u75C5\u9662\u306F\u3001\u306A\u3093\u3067\u3082\u7279\u6B8A\u306A\u75BE\u60A3\u3092\u62B1\u3048\u3066\u308B\u5B50\u4F9B\u9054\u3092\u96C6\u3081\u3066\u3044\u308B\u3089\u3057\u3044\u3002\r\n"
-  - character: {fileID: 0}
-    sound: {fileID: 0}
-    name: 
-    isHighlight: 0
-    text: "\u3042\u306E\u5C11\u5973\u306F\u305F\u3057\u304B\u3001\u592A\u967D\u306E\u5149\u306B\u6975\u7AEF\u306B\u5F31\u3044\u306E\u3060\u3068\u304B\u3002\r\n\u3060\u304B\u3089\u7A93\u306E\u306A\u3044\u75C5\u5BA4\u306B\u9589\u3058\u8FBC\u3081\u3089\u308C\u3066\u3044\u308B\u306E\u3060\u308D\u3046\u3002"
-  - character: {fileID: 0}
-    sound: {fileID: 0}
-    name: 
-    isHighlight: 0
-    text: "\u305D\u3057\u3066\u3053\u3053\u306B\u3044\u308B\u5B50\u4F9B\u305F\u3061\u306F\u307F\u306A\u3001\u3042\u306E\u5C11\u5973\u306B\u3068\u3063\u3066\u306E\u592A\u967D\u5149\u306E\u3088\u3046\u306B\u3001\u305D\u308C\u305E\u308C\u304C\u7206\u5F3E\u3092\u62B1\u3048\u3066\u3044\u308B\u3002"
-  - character: {fileID: 0}
-    sound: {fileID: 0}
-    name: 
-    isHighlight: 0
-    text: "\u4E0D\u7528\u610F\u306B\u5916\u306B\u51FA\u3066\u3057\u307E\u3046\u3068\u3001\u3044\u3064\u5730\u96F7\u3092\u8E0F\u307F\u629C\u304F\u304B\u5206\u304B\u3089\u306A\u3044\u3002\n\u6545\u306B\u75C5\u9662\u306E\u5916\u306F\u91DD\u304C\u3064\u3044\u305F\u67F5\u3067\u8986\u308F\u308C\u3001\u6577\u5730\u304B\u3089\u51FA\u308B\u3053\u3068\u306F\u8A31\u3055\u308C\u306A\u3044\u3002"
-  - character: {fileID: 0}
-    sound: {fileID: 0}
-    name: 
-    isHighlight: 0
-    text: "\u3060\u304C\u3001\u3053\u306E\u75C5\u9662\u306E\u88CF\u3002\n\u8001\u673D\u5316\u3057\u6B6A\u3093\u3060\u3053\u3068\u3067\u98DB\u3073\u8D8A\u3048\u3089\u308C\u308B\u3088\u3046\u306B\u306A\u3063\u305F\u9244\u67F5\u306E\u5148\u3002"
-  - character: {fileID: 0}
-    sound: {fileID: 0}
-    name: 
-    isHighlight: 0
-    text: "\u305D\u3053\u306B\u3001\u5927\u304D\u306A\u6E56\u304C\u3042\u308B\u3002\n\u533B\u8005\u306E\u76EE\u3092\u76D7\u3093\u3067\u6563\u6B69\u3092\u3057\u3066\u3044\u305F\u3068\u304D\u306B\u305F\u307E\u305F\u307E\u898B\u3064\u3051\u305F\u304A\u6C17\u306B\u5165\u308A\u306E\u5834\u6240\u3002"
-  - character: {fileID: 0}
-    sound: {fileID: 0}
-    name: 
+    name: "\u30E6\u30AD"
     isHighlight: 1
-    text: "\u7720\u308C\u306A\u3044\u591C\u306F\u3001\u3088\u304F\u3053\u3053\u306B\u6765\u308B\u3002"
-  - character: {fileID: 0}
-    sound: {fileID: 0}
-    name: 
-    isHighlight: 0
-    text: "\u5916\u306F\u826F\u3044\u3002\u843D\u3061\u7740\u304F\u3002\n\u75C5\u306B\u8089\u4F53\u306F\u304A\u308D\u304B\u7CBE\u795E\u3059\u3089\u4FB5\u3055\u308C\u3001\u5E38\u306B\u865A\u308D\u306A\u5B50\u4F9B\u306E\u76EE\u3002\n\u3044\u3064\u3082\u512A\u3057\u3055\u3092\u898B\u305B\u3066\u3044\u308B\u304C\u3001\u3069\u3053\u304B\u4FE1\u7528\u51FA\u6765\u306A\u3044\u5927\u4EBA\u306E\u76EE\u3002"
-  - character: {fileID: 0}
-    sound: {fileID: 0}
-    name: 
-    isHighlight: 0
-    text: "\u5168\u3066\u3092\u5FD8\u308C\u3089\u308C\u308B\u3053\u306E\u5834\u6240\u304C\u597D\u304D\u3060\u3002"
-  - character: {fileID: 0}
-    sound: {fileID: 0}
-    name: 
-    isHighlight: 0
-    text: "\u2500\u2500\u2500\u2500\u7A7A\u306B\u6D6E\u304B\u3076\u661F\u306F\u3001\u6BCE\u6669\u7570\u306A\u308B\u59FF\u3092\u50D5\u306B\u898B\u305B\u3066\u304F\u308C\u308B\u3002\r\n\u7A7A\u6C17\u306F\u6F84\u307F\u6E21\u308A\u3001\u6E9C\u98F2\u306F\u606F\u3068\u306A\u3063\u3066\u5B99\u3092\u821E\u3046\u3002"
-  - character: {fileID: 0}
-    sound: {fileID: 0}
-    name: 
-    isHighlight: 0
-    text: "\u6697\u304C\u308A\u306E\u4E2D\u3067\u3082\u3001\u7A7A\u306F\u661F\u306E\u6A19\u306B\u7167\u3089\u3055\u308C\u3069\u3053\u307E\u3067\u3082\u7D9A\u3044\u3066\u3044\u304D\u3001\r\n\u6C34\u9762\u306F\u53B3\u304B\u306B\u3001\u50D5\u3068\u305D\u306E\u85CD\u3092\u91CD\u306D\u3066\u5199\u3057\u3060\u3059\u3002"
-  - character: {fileID: 0}
-    sound: {fileID: 0}
-    name: 
-    isHighlight: 0
-    text: "\u2026\u305D\u308C\u304C\u307E\u308B\u3067\u3001\u50D5\u3089\u306E\u672A\u6765\u3059\u3089\u4E88\u611F\u3055\u305B\u3066\u304F\u308C\u3066\u3044\u308B\u3088\u3046\u3067\u3002"
-  - character: {fileID: 0}
+    canChange: 0
+    text: "\u305F\u307E\u306B\u5E8A\u304C\u30B0\u30E9\u30B0\u30E9\u63FA\u308C\u308B\u3058\u3083\u3093\uFF1F\u3042\u308C\u306F\u5916\u306B\u4F4F\u307E\u3046\u5DE8\u4EBA\u304C\u2026"
+  - background: {fileID: 21300000, guid: 22d298df322387e448f25d3331bba48b, type: 3}
+    character: {fileID: 21300000, guid: deb8cc4befe32634891749b029486705, type: 3}
     sound: {fileID: 0}
     name: "\u30CF\u30B8\u30E1"
     isHighlight: 0
-    text: "\u2500\u2500\u2500\u2500\u2500\u2500"
-  - character: {fileID: 0}
+    canChange: 0
+    text: "\u3044\u3084\u2026\u305D\u308C\u306F\u5730\u9707\u3068\u3044\u3063\u3066\u2026"
+  - background: {fileID: 21300000, guid: 22d298df322387e448f25d3331bba48b, type: 3}
+    character: {fileID: 21300000, guid: deb8cc4befe32634891749b029486705, type: 3}
     sound: {fileID: 0}
     name: 
     isHighlight: 0
-    text: "\u53CD\u82BB\u3059\u308B\u601D\u8003\u306F\u6B62\u3093\u3060\u3002\n\u6B7B\u3093\u3060\u3088\u3046\u306B\u751F\u304D\u308B\u65E5\u3005\u3092\u5FD8\u308C\u3001\u65B0\u305F\u306A\u672A\u6765\u304C\u601D\u8003\u306B\u904E\u304E\u308B\u3002"
-  - character: {fileID: 0}
+    canChange: 0
+    text: "\u671D\u306E\u691C\u8A3A\u304C\u7D42\u308F\u308B\u3068\u3001\u671D\u98DF\u3092\u3068\u308A\u306A\u304C\u3089\u30E6\u30AD\u3068\u8A71\u3059\u6BCE\u65E5\u304C\u7D9A\u304F\u3002\n\u3068\u306F\u3044\u3048\u3001\u4ECA\u307E\u3067\u306E\u3088\u3046\u306A\u7E70\u308A\u8FD4\u3057\u306E\u65E5\u3005\u3067\u306F\u306A\u3044\u3002"
+  - background: {fileID: 21300000, guid: 22d298df322387e448f25d3331bba48b, type: 3}
+    character: {fileID: 21300000, guid: deb8cc4befe32634891749b029486705, type: 3}
     sound: {fileID: 0}
     name: 
     isHighlight: 0
-    text: "\u601D\u3044\u6D6E\u304B\u3076\u306F\u3001\u75C5\u5BA4\u306E\u9685\u306B\u3044\u308B\u5C11\u5973\u3002\r\n\u5F7C\u5973\u306F\u3001\u3042\u306E\u90E8\u5C4B\u306B\u3044\u306A\u304C\u3089\u3082\u3001\u4ECA\u3053\u3053\u306B\u3044\u308B\u50D5\u3088\u308A\u3082\u81EA\u7531\u306A\u6C17\u304C\u3059\u308B\u3002"
-  - character: {fileID: 0}
+    canChange: 0
+    text: "\u5F7C\u5973\u306E\u5E83\u304F\u6D45\u3044\u5916\u306E\u77E5\u8B58\u3092\u3001\u50D5\u304C\u5B66\u3093\u3060\u79D1\u5B66\u7684\u77E5\u8B58\u306B\u3088\u3063\u3066\u88CF\u4ED8\u3051\u3059\u308B\u3002\r\n\u6BCE\u56DE\u7570\u306A\u308B\u77E5\u8B58\u3084\u53CD\u5FDC\u3092\u898B\u305B\u3066\u304F\u308C\u308B\u30E6\u30AD\u306E\u4F1A\u8A71\u306F\u3001\u305D\u306E\u3069\u308C\u3082\u304C\u65B0\u9BAE\u306A\u3082\u306E\u3060\u3063\u305F\u3002"
+  - background: {fileID: 21300000, guid: 22d298df322387e448f25d3331bba48b, type: 3}
+    character: {fileID: 21300000, guid: deb8cc4befe32634891749b029486705, type: 3}
+    sound: {fileID: 0}
+    name: 
+    isHighlight: 0
+    canChange: 0
+    text: "\u2500\u2500\u2500\u2500\u2500\u601D\u3048\u3070\u3001\u3042\u306E\u6E56\u3092\u898B\u306B\u884C\u304B\u306A\u304F\u306A\u3063\u305F\u306E\u306F\u3001\u305F\u3060\u751F\u6D3B\u30EA\u30BA\u30E0\u304C\u5909\u5316\u3057\u305F\u304B\u3089\u3058\u3083\u306A\u3044\u3002\r\n\u3053\u306E\u6642\u9593\u304C\u3001\u3068\u3066\u3082\u5927\u5207\u3067\u697D\u3057\u304B\u3063\u305F\u306E\u3060\u3002\r\n"
+  - background: {fileID: 21300000, guid: 22d298df322387e448f25d3331bba48b, type: 3}
+    character: {fileID: 21300000, guid: 815772c63da63764fb0793adb4fd05d8, type: 3}
+    sound: {fileID: 0}
+    name: 
+    isHighlight: 0
+    canChange: 0
+    text: "\u3053\u306E\u5834\u6240\u306E\u7AAE\u5C48\u3055\u3068\u920D\u91CD\u306A\u7A7A\u6C17\u611F\u3092\u5FD8\u308C\u308B\u307B\u3069\u306B\u3002\n\u2500\u2500\u2500\u6B21\u898B\u308B\u3068\u304D\u306F\u30E6\u30AD\u3068\u4E00\u7DD2\u304C\u3044\u3044\u3068\u9858\u3046\u307B\u3069\u306B\u3002\n\u5F7C\u5973\u306E\u3053\u3068\u3092\u3001\u5927\u5207\u306B\u60F3\u3046\u3088\u3046\u306B\u306A\u3063\u3066\u3044\u305F\u3002"
+  - background: {fileID: 21300000, guid: 22d298df322387e448f25d3331bba48b, type: 3}
+    character: {fileID: 21300000, guid: 815772c63da63764fb0793adb4fd05d8, type: 3}
+    sound: {fileID: 0}
+    name: 
+    isHighlight: 0
+    canChange: 0
+    text: "\u540C\u5BA4\u306E\u4EBA\u9593\u306F\u9A12\u304C\u3057\u3055\u6545\u304B\u3001\u305D\u308C\u3068\u3082\u3053\u306E\u660E\u308B\u3044\u96F0\u56F2\u6C17\u306B\u7531\u6765\u3059\u308B\u3082\u306E\u304B\u3002\r\n\u50D5\u306E\u3053\u3068\u3092\u5FEB\u304F\u601D\u3063\u3066\u3044\u306A\u3044\u3088\u3046\u3060\u304C\u3002\r\n\u77E5\u3063\u305F\u3053\u3063\u3061\u3083\u306A\u3044\u3002"
+  - background: {fileID: 21300000, guid: 22d298df322387e448f25d3331bba48b, type: 3}
+    character: {fileID: 21300000, guid: 815772c63da63764fb0793adb4fd05d8, type: 3}
+    sound: {fileID: 0}
+    name: 
+    isHighlight: 0
+    canChange: 0
+    text: "\u81EA\u6211\u3092\u6368\u3066\u3066\u81EA\u3089\u306E\u5C0A\u53B3\u3068\u5922\u3092\u63B2\u3052\u3066\u751F\u304D\u308B\u3053\u3068\u3092\u8AE6\u3081\u305F\u9053\u5316\u306B\u3002\r\n\u50D5\u3089\u306E\u3053\u3068\u3092\u3068\u3084\u304B\u304F\u8A00\u308F\u308C\u3066\u305F\u307E\u308B\u3082\u306E\u304B\u3002"
+  - background: {fileID: 21300000, guid: 22d298df322387e448f25d3331bba48b, type: 3}
+    character: {fileID: 21300000, guid: 179d9f80b801e1946a6e90838797b941, type: 3}
+    sound: {fileID: 0}
+    name: 
+    isHighlight: 0
+    canChange: 0
+    text: "\u6C17\u304C\u4ED8\u3051\u3070\u3001\u591C\u3082\u66F4\u3051\u3066\u3044\u3066\u3002"
+  - background: {fileID: 21300000, guid: 22d298df322387e448f25d3331bba48b, type: 3}
+    character: {fileID: 21300000, guid: 179d9f80b801e1946a6e90838797b941, type: 3}
     sound: {fileID: 0}
     name: "\u30CF\u30B8\u30E1"
     isHighlight: 0
-    text: "\u2500\u2500\u2500\u2500\u2500\u5C11\u3057\u3001\u8A71\u3057\u3066\u307F\u305F\u3044\u306A\u3002"
-  - character: {fileID: 0}
+    canChange: 0
+    text: "\u3042\u30682\u65E5\u3001\u304B\u3002"
+  - background: {fileID: 21300000, guid: 22d298df322387e448f25d3331bba48b, type: 3}
+    character: {fileID: 21300000, guid: 815772c63da63764fb0793adb4fd05d8, type: 3}
+    sound: {fileID: 0}
+    name: "\u30E6\u30AD"
+    isHighlight: 1
+    canChange: 0
+    text: "\u305D\u3046\u3060\u306D\u3002\u6E80\u6708\u306E\u65E5\u3002\n\u307B\u3093\u3068\u3046\u306B\u3001\u697D\u3057\u307F\u3002"
+  - background: {fileID: 21300000, guid: 22d298df322387e448f25d3331bba48b, type: 3}
+    character: {fileID: 21300000, guid: deb8cc4befe32634891749b029486705, type: 3}
+    sound: {fileID: 0}
+    name: "\u30CF\u30B8\u30E1"
+    isHighlight: 0
+    canChange: 0
+    text: "\u3042\u3041\u2026\u307B\u3093\u3068\u3046\u306B\u3002\n\u305D\u308C\u3058\u3083\u3001\u304A\u3084\u3059\u307F\u3002"
+  - background: {fileID: 21300000, guid: 22d298df322387e448f25d3331bba48b, type: 3}
+    character: {fileID: 21300000, guid: 815772c63da63764fb0793adb4fd05d8, type: 3}
+    sound: {fileID: 0}
+    name: "\u30E6\u30AD"
+    isHighlight: 1
+    canChange: 0
+    text: "\u3046\u3093\u3001\u304A\u3084\u3059\u307F\u3002"
+  - background: {fileID: 21300000, guid: 22d298df322387e448f25d3331bba48b, type: 3}
+    character: {fileID: 0}
     sound: {fileID: 0}
     name: 
     isHighlight: 0
-    text: "\u50D5\u306E\u4E2D\u3067\u3001\u306A\u306B\u304B\u304C\u3001\u6FC1\u308B\u97F3\u304C\u3057\u305F\u3002"
+    canChange: 0
+    text: "\u5225\u308C\u3092\u544A\u3052\u3066\u81EA\u5206\u306E\u30D9\u30C3\u30C9\u3078\u3068\u623B\u308B\u3002"
+  - background: {fileID: 21300000, guid: 22d298df322387e448f25d3331bba48b, type: 3}
+    character: {fileID: 0}
+    sound: {fileID: 0}
+    name: 
+    isHighlight: 0
+    canChange: 0
+    text: "\u6E80\u6708\u3002\r\n\u305D\u308C\u306F\u6708\u304C\u4E00\u5207\u3092\u96A0\u3059\u3053\u3068\u306A\u304F\u6D6E\u304B\u3073\u4E0A\u304C\u308A\u3001\u5F7C\u5973\u304C\u5E0C\u3046\u592A\u967D\u306B\u6700\u3082\u8FD1\u3044\u5929\u7403\u306E\u30AB\u30BF\u30C1\u3002\r\n\u7D04\u675F\u306E\u65E5\u306F\u3001\u6B21\u306E\u6E80\u6708\u306E\u591C\u306B\u6C7A\u3081\u3066\u3044\u305F\u3002"
